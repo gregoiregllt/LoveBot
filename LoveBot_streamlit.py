@@ -11,7 +11,8 @@ from langchain.chains import RetrievalQA
 
 #load_dotenv()  # Ceci charge les variables à partir de .env
 
-api_key = st.sidebar.text_input('OpenAI API Key', type='password')
+#api_key = st.sidebar.text_input('OpenAI API Key', type='password')
+api_key="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"
 
 import pandas as pd
 # from langchain.schema import Document  # Assurez-vous que le chemin d'importation est correct
