@@ -12,7 +12,6 @@ from langchain.chains import RetrievalQA
 #load_dotenv()  # Ceci charge les variables à partir de .env
 
 api_key = st.sidebar.text_input('OpenAI API Key', type='password')
-#api_key="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"
 
 # api_key=os.getenv('OPENAI_API_KEY')
 
@@ -32,12 +31,7 @@ pinecone.init(
 
 
 
-
-
-
-
-
-st.title('Pineurs LoveCoach [actuellement disabled car assoupi]')
+st.title('Pineurs LoveCoach')
 
 st.image("love_coach.png",width=200)
 
@@ -81,7 +75,6 @@ def generate_response(input_text):
         )
     rag_chain = ({"context": retriever, "question": RunnablePassthrough()} | rag_prompt_custom | llm)
     # Tentez de générer une réponse
-    # messages = [HumanMessage(content=input_text)]
     response = rag_chain.invoke(input_text).content
     st.info(response)
 
