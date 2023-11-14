@@ -37,7 +37,7 @@ pinecone.init(
 
 
 
-st.title('Pineurs LoveCoach')
+st.title('Pineurs LoveCoach [actuellement disabled car assoupi]')
 
 st.image("love_coach.png",width=200)
 
