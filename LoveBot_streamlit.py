@@ -31,10 +31,10 @@ pinecone.init(
 
 
 
-st.title('Pineurs LoveCoach [asleep - disabled 20/11/2023]')
+st.title('Pineurs LoveCoach')
 
-# st.image("love_coach.png",width=200)
-st.image("coach_asleep.png",width=200)
+st.image("love_coach.png",width=200)
+# st.image("coach_asleep.png",width=200)
 
 template = """
 
